@@ -9,4 +9,4 @@ My projects:
 
 [Lucid](https://bullego.github.io/Lucid/ "Lucid project") - Lucid project
 
-[LAB](https://bullego.github.io/temporary-lab/ "Lab project") - LAB project
+[LAB](https://bullego.github.io/temporary-lab/ "Lab project") - Lawyer project (test_desktop)
