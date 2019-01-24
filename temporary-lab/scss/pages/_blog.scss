@@ -1,0 +1,206 @@
+//____________________BLOG_PAGE
+//____________________blog_header(section_1)
+.blog_header {
+	min-height: 32.2rem;
+	//border: 1px solid red;
+
+	.header_wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 3rem;
+	}
+	.header_logo {	
+		width: 29rem;
+		height: 7rem;
+		//border: 1px solid red;
+	}
+	.logo_img {
+		width: 100%;
+		height: auto;
+	}
+	.nav_menu {
+		position: relative;
+		height: 7rem;
+		display: flex;
+		align-items: center;
+		//border: 1px solid red;
+	}
+	.header_bg_menu {
+		position: absolute;
+		top: -390%;
+		left: -14%;
+		//transform: scale(1);
+		//z-index: 1000;
+	}
+	.menu_items {
+		//position: relative;
+		//height: 7rem;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}	
+	.menu_item {
+		position: relative;	
+		margin-left: 2.2rem;
+		margin-right: 2.2rem;
+
+		/* &::after {
+			content: "";
+			position: absolute;
+			height: 0.3rem;
+			width: 100%;
+			top: 2.54rem;
+			left: 0;
+			background-color: $yellow-bg;
+			transform: scale(0);
+			transition: transform 0.2s;
+			//z-index: 2000;
+		}
+		&:hover,
+		&:focus,
+		&:active { 
+			outline: none;
+		
+			&::after {
+				transform: scale(1);
+			}
+		} */
+	}
+	.menu_item__active {
+		position: relative;
+
+		&::after {
+			content: " ";
+			position: absolute;
+			width: 100%;
+			height: 0.3rem;			
+			top: 2.54rem;
+			left: 0rem;
+			background-color: $yellow-bg;
+			transform: scale(1);
+			//border: 1px solid red;
+		}
+	}
+	.menu_link {	
+		@include nav_menu;
+		color: $white-text;
+		//color: $black-text;
+
+		&:hover {
+ 			color: $yellow-bg;
+ 		}	
+ 		&:active {
+ 			color: $white-text;
+ 		}	
+	}
+}
+
+//____________________blog(section_2)
+.blog {
+	margin-top: -15rem;
+	margin-bottom: 31.9rem;
+	//border: 1px solid red;
+
+	.blog_title {
+		margin: 0;
+		margin-bottom: 12rem;
+		@include section_title;
+		color: $purple-text;
+		line-height: 18.3rem;
+	}
+	.blog_items {
+		//width: 136.9rem;
+		margin-bottom: 4rem;
+		//margin-left: 14rem;
+	}
+	.blog_item_link {
+		margin: 0;
+		margin-bottom: 2rem;
+		@include section_subtitle_semi;
+		font-size: 2.8rem;
+		line-height: 3.4rem;
+		color: $black-text;
+	}
+	.blog_item_text {
+		@include section_text;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		color: #707070;
+	}
+	.text_clip {
+		color: #707070;
+	}
+	.pagination {
+		display: flex;
+		margin: 0;
+		margin-top: 5rem;
+		//margin-left: 12.25rem;
+		padding: 0;
+		list-style-type: none;
+	}
+	.page_item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 6rem;
+		height: 6rem;
+		margin: 0 1.25rem;
+		//border: 1px solid red;
+
+		&:hover,
+		&:focus {
+			border: 3px solid $purple-bg;
+		}
+		&:active {
+			border: 1px solid $purple-bg;
+		}
+	}
+	.page_item:first-child,
+	.page_item:last-child {
+		width: 11.1rem;
+		height: 6rem;
+		background-color: $purple-bg;
+
+		&:hover,
+		&:focus {
+			border: none;
+		}
+		&:active {
+			border: none;
+		}
+	}
+	.page_link {
+		//width: 100%;
+		//height: 100%;
+		padding: 2.3rem;
+		@include section_text;
+		font-size: 1.6rem;
+		//line-height: 2rem;
+		color: $black-text;
+	}
+	.page_item:first-child > .page_link,
+	.page_item:last-child > .page_link {
+		padding: 2.3rem 4.7rem !important;
+	}
+	.page_arrow_prev {
+		display: block;
+		width: 1rem;
+		height: 2rem;
+		background-image: url('../img/pagination-arrow-left.svg');
+		background-size: 1rem 2rem;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.page_arrow_next {
+		display: block;
+		width: 1rem;
+		height: 2rem;
+		background-image: url('../img/pagination-arrow-right.svg');
+		background-size: 1rem 2rem;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

@@ -1,0 +1,66 @@
+@font-face {
+  font-display: swap; // свойство font-display для современных браузеров (старые загрузят шрифты по своему). У swap нет блокировки отображения шрифта, если нужный шрифт не успел загрузиться браузером.. + бесконечное ожидание подмены стандартного/системного шрифта (Arial) на нужный шрифт (Montserrat)
+  font-family: "Bookman-Old-Style";
+  font-style: normal;
+  font-weight: 400;
+  src: local(Bookman-Old-Style), //проверяем наличие шрифта в ОС пользователя
+       url("../fonts/Bookman-Style-Reg.woff2") format("woff2"),//если шрифт не установлен, тогда загружаем его с сервера по указанному пути(без установки в ОС пользователя)
+	     url("../fonts/Bookman-Style-Reg.woff") format("woff");//если шрифт не установлен, тогда загружаем его с сервера по указанному пути(без установки в ОС пользователя)
+}
+@font-face {
+  font-display: swap;
+  font-family: "Bookman-Old-Style";
+  font-style: normal;
+  font-weight: 700;
+  src: local(Bookman-Old-Style),
+       url("../fonts/Bookman-Style-Bold.woff2") format("woff2"),
+       url("../fonts/Bookman-Style-Bold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Proxima-Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: local(Proxima-Nova),
+       url("../fonts/Proxima-Nova-Reg.woff2") format("woff2"),
+       url("../fonts/Proxima-Nova-Reg.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Proxima-Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: local(Proxima-Nova),
+       url("../fonts/Proxima-Nova-Bold.woff2") format("woff2"),
+       url("../fonts/Proxima-Nova-Bold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Proxima-Nova";
+  font-style: italic;
+  font-weight: 700;
+  src: local(Proxima-Nova),
+       url("../fonts/Proxima-Nova-Bold-Italic.woff2") format("woff2"),
+       url("../fonts/Proxima-Nova-Bold-Italic.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Proxima-Nova";
+  font-style: normal;
+  font-weight: 600;
+  src: local(Proxima-Nova),
+       url("../fonts/Proxima-Nova-Semibold.woff2") format("woff2"),
+       url("../fonts/Proxima-Nova-Semibold.woff") format("woff");
+}
+
+/* 
+100 - Thin
+200 - Extra Light, Ultra Light
+300 - Light
+400 - Normal, Book, Regular
+500 - Medium
+600 - Semi Bold, Demi Bold
+700 - Bold
+800 - Extra Bold, Ultra Bold
+900 - Black, Heavy
+*/

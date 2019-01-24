@@ -1,0 +1,221 @@
+//____________________ABOUT_PAGE
+//____________________about_header(section_1)
+.about_header {
+	min-height: 32.2rem;
+	//border: 1px solid red;
+
+	.header_wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 3rem;
+	}
+	.header_logo {	
+		width: 29rem;
+		height: 7rem;
+		//border: 1px solid red;
+	}
+	.logo_img {
+		width: 100%;
+		height: auto;
+	}
+	.nav_menu {
+		position: relative;
+		height: 7rem;
+		display: flex;
+		align-items: center;
+		//border: 1px solid red;
+	}
+	.header_bg_menu {
+		position: absolute;
+		top: -390%;
+		left: -14%;
+		//transform: scale(1);
+		//z-index: 1000;
+	}
+	.menu_items {
+		//position: relative;
+		//height: 7rem;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}	
+	.menu_item {
+		position: relative;	
+		margin-left: 2.2rem;
+		margin-right: 2.2rem;
+
+		/* &::after {
+			content: "";
+			position: absolute;
+			height: 0.3rem;
+			width: 100%;
+			top: 2.54rem;
+			left: 0;
+			background-color: $yellow-bg;
+			transform: scale(0);
+			transition: transform 0.2s;
+			//z-index: 2000;
+		}
+		&:hover,
+		&:focus,
+		&:active { 
+			outline: none;
+		
+			&::after {
+				transform: scale(1);
+			}
+		} */
+	}
+	.menu_item__active {
+		position: relative;
+
+		&::after {
+			content: " ";
+			position: absolute;
+			width: 100%;
+			height: 0.3rem;			
+			top: 2.54rem;
+			left: 0rem;
+			background-color: $yellow-bg;
+			transform: scale(1);
+			//border: 1px solid red;
+		}
+	}
+	.menu_link {	
+		@include nav_menu;
+		color: $white-text;
+		//color: $black-text;
+
+		&:hover {
+ 			color: $yellow-bg;
+ 		}	
+ 		&:active {
+ 			color: $white-text;
+ 		}	
+	}
+}
+
+//____________________about_us(section_2)
+.about_us {
+	margin-top: -15rem;
+	margin-bottom: 9rem;
+
+	.about_title {
+		margin: 0;
+		margin-bottom: 12rem;
+		@include section_title;
+		color: $purple-text;
+		line-height: 18.3rem;
+	}
+	.about_text {
+		//width: 138rem;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 3rem;
+		@include section_text;
+		font-size: 18px;
+		line-height: 2.2rem;
+		font-weight: 700;
+	}
+}
+
+//____________________about_team(section_3)
+.about_team {
+	margin-bottom: 7.5rem;
+
+	.team_title {
+		margin: 0;
+		margin-bottom: 5rem;
+		@include section_title;
+		font-size: 4.2rem;
+		line-height: 5.2rem;
+		color: #2A284A;
+	}
+	.team_company {
+		display: flex;
+	}
+	.team_pravova {
+		margin-left: 14rem;
+	}
+	.team_granat {
+		margin-left: 19rem;
+	}
+	.team_subtitle {
+		margin-bottom: 3.5rem;	
+		@include section_title;
+		font-size: 3rem;
+		line-height: 3.7rem;
+		color: #2A284A;
+		text-decoration: uppercase;
+	}
+	.team_items {
+		margin: 0;
+		padding: 0;
+		@include section_text;
+		line-height: 2.9rem;
+		list-style-type: none;
+	}
+	.team_item {
+		margin-bottom: 4.5rem;
+		@include section_subtitle_semi;
+		line-height: 3.4rem;
+	}
+	.team_job {
+		display: block;
+		margin-top: 1.7rem;
+		@include section_text;
+		line-height: 2.9rem;
+	}
+}
+
+//____________________about_services(section_4)
+.about_services {
+	margin-bottom: 12rem;
+
+	.sevices_title {
+		margin: 0;
+		margin-bottom: 5rem;
+		@include section_title;
+		font-size: 4.2rem;
+		line-height: 5.2rem;
+		color: $purple-text;
+	}
+	.service_items {
+		display: flex;
+		flex-wrap: wrap;
+		width: 125rem;
+		//min-height: 32.5rem;
+		margin-left: 10rem;
+		padding: 0;
+		list-style-type: none;
+		//border: 1px solid red;
+	}
+	.service_item {
+		padding: 0;
+		margin: 0 4rem;
+		margin-bottom: 2.5rem;
+		width: 33.4rem;
+		line-height: 1;
+		//border: 1px solid blue;
+	}
+	.service_link {
+		@include section_subtitle;
+		font-size: 3rem;
+		line-height: 3.7rem;
+		color: $black-text;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+			text-decoration-color: $yellow-bg;
+		}
+	}
+	.service_link__active {
+		text-decoration: underline;
+		text-decoration-color: $yellow-bg;
+	}
+}

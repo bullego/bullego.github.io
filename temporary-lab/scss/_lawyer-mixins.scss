@@ -1,0 +1,56 @@
+@mixin nav_menu {
+	font-family: "Bookman Old Style";
+	font-size: 24px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin header_title {
+	font-family: "Bookman Old Style";
+	font-size: 60px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin slider_title {
+	font-family: "Proxima Nova";
+	font-size: 32px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin slider_text {
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin section_title {
+	font-family: "Proxima Nova";
+	font-size: 150px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin section_subtitle {
+	font-family: "Proxima Nova";
+	font-size: 36px;
+	line-height: 1;
+	font-style: italic;
+	font-weight: 700;
+}
+@mixin section_subtitle_semi {
+	font-family: "Proxima Nova";
+	font-size: 28px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 600;
+}
+@mixin section_text {
+	font-family: "Proxima Nova";
+	font-size: 24px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}
