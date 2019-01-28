@@ -1,5 +1,5 @@
 # Buliuk Yevhenii
-My projects:
+Some of my projects:
 
 [Alcove-service](https://bullego.github.io/Alcove-service/ "Alcove-service project") - Alcove-service project
 
