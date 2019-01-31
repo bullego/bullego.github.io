@@ -15,4 +15,4 @@ Some of my projects:
 
 [Firelink](https://bullego.github.io/Firelink-test/ "Firelink test") - Firelink test
 
-[Idap-test](https://bullego.github.io/Idap/ "Idap test") - Idap test
+[Idap](https://bullego.github.io/Idap/ "Idap test") - Idap test
