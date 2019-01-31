@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Idap</title>
+
+	<!-- Preload Fonts -->
+	<link rel="preload" href="fonts/FreightSans-Book.woff2" as="font">
+	<link rel="preload" href="fonts/FreightSans-Medium.woff2" as="font">
+	<link rel="preload" href="fonts/FreightSans-Semibold.woff2" as="font">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="page-container">
+
+	<aside class="sidenav" id="sidenav">
+		<div class="sidenav__avatar">
+			<img class="sidenav__avatar-img" src="img/user-avatar.png" alt="User avatar">
+			<span class="sidenav__messages-count">2</span>
+		</div>
+		<nav class="sidenav_nav nav-menu">
+			<ul class="nav-menu__items">
+				<li class="nav-menu__item  nav-menu__item--active">
+					<span class="nav-menu__items--separate"></span>
+					<button class="nav-menu__btn btn-board"></button>
+					<span class="nav-menu__item-dscr">Board</span>
+				</li>
+				<li class="nav-menu__item">
+					<span class="nav-menu__items--separate"></span>
+					<button class="nav-menu__btn btn-projects"></button>
+					<span class="projects-count">9</span>
+					<span class="nav-menu__item-dscr">Projects</span>
+				</li>
+				<li class="nav-menu__item">
+					<span class="nav-menu__items--separate"></span>
+					<button class="nav-menu__btn btn-settings"></button>
+					<span class="nav-menu__item-dscr">Settings</span>
+				</li>
+			
+			
+				<li class="nav-menu__item  nav-menu__item-upgrade">
+					<button class="nav-menu__btn btn-upgrade"></button>
+					<span class="upgrade-count">3</span>
+					<span class="nav-menu__item-dscr">Upgrade</span>
+				</li>
+				<li class="nav-menu__item">
+					<span class="nav-menu__items--separate"></span>
+					<button class="nav-menu__btn btn-logout"></button>					
+					<span class="nav-menu__item-dscr">Logout</span>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+
+	<div class="content-wrap">
+		<header class="header" id="header">
+			<div class="header__dashboard">
+				<button class="header__btn-refresh">
+					<span class="visually-hidden">Refresh dashboard</span>
+				</button>
+				<button class="header__btn-dashboard">Dashboard</button>
+			</div>
+			<div class="header__users">
+				<button class="header__btn-active">
+					<span class="visually-hidden">Active users</span>
+				</button>
+				<button class="header__btn-online">
+					<span class="users-count">5</span> user online
+				</button>
+			</div>
+		</header>
+		
+		<main class="main" id="main">
+			<div class="tabs">
+
+				<ul class="tabs__items">
+					<li class="tabs__item">
+						<button class="tabs__btn  tabs__btn-projects" type="button">
+							Active Projects
+						</button>
+						<span class="tabs__projects-count">9</span>
+					</li>
+					<li class="tabs__item">
+						<button class="tabs__btn  tabs__btn-messenger" type="button">
+							Messenger
+						</button>
+						<span class="tabs__messenger-count">2</span>	
+					</li>
+					
+					<li class="tabs__search">
+						<label class="tabs__search-label">
+							<span class="visually-hidden">Search Project, User, Task, etc...</span>
+							<input class="tabs__search-input"
+								   type="text"
+								   name="project" 
+								   placeholder="Search Project, User, Task, etc...">
+						</label>
+					</li>
+														
+				</ul>				
+
+				<div class="tabs__content--wrap">
+					<div class="tabs__content">
+						<div class="tabs__content-projects">
+
+							<div class="tabs__content-left  projects">
+								<div class="projects__search">
+									<label class="projects__search-label">
+										<span class="visually-hidden">Search a Project with Name, Task, User...</span>
+										<input class="projects__search-input"
+											   type="text"
+											   name="project" 
+											   placeholder="Search a Project with Name, Task, User...">
+									</label>
+
+									<div class="projects__search-select">
+										<button class="projects__search-btn">
+											New Projects 
+											<span>(descending)</span>
+										</button>
+
+										<button class="projects__search-add">
+											<span class="visually-hidden">Search add button</span>
+										</button>
+									</div>
+								</div><!-- ./content-left__search -->	
+									
+								<ul class="projects__items">
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												23<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												87<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Subpage PSD</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												PANORAMA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>								
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												83<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Layout & implementation in HTML & CSS</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												EBAY RELAUNCH
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item-info">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												66<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Creating the Context</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<div class="projects__workers--wrap">
+												<div class="projects__workers--online">
+													<img class="projects__workers-avatar" src="img/user-avatar.png" alt="workers avatar">
+												</div>
+												<div class="projects__workers--online">
+													<img class="projects__workers-avatar" src="img/user-avatar.png" alt="workers avatar">
+												</div>
+												<div class="projects__workers--offline">
+													<img class="projects__workers-avatar" src="img/user-avatar.png" alt="workers avatar">
+												</div>
+												<span class="projects__workers-count">+3</span>
+											</div>
+											<button class="projects__btn-name" type="button">
+												TODAY, <span>13:40</span> PM
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>									
+										</div>
+									</li>
+
+									<li class="projects__item-info">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent--ready">
+												READY
+											</span>
+											<p class="projects__percent-dscr--ready">Implementation in the Layout</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<div class="projects__workers--wrap">	
+												<div class="projects__workers--online">
+													<img class="projects__workers-avatar" src="img/user-avatar.png" alt="workers avatar">
+												</div>
+												<div class="projects__workers--offline">
+													<img class="projects__workers-avatar" src="img/user-avatar.png" alt="workers avatar">
+												</div>
+												
+											</div>
+											<button class="projects__btn-name" type="button">
+												YESTERDAY, <span>12:40</span> PM
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>									
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												23<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Lorem ipsum dolor sit amet, elitr, sed diam nonumy eirmod tempor</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												PANORAMA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+									<li class="projects__item">
+										<div class="projects__percent--wrap">
+											<span class="projects__percent">
+												98<span>%</span>
+											</span>
+											<p class="projects__percent-dscr">Create Contact Formular</p>
+										</div>
+
+										<div class="projects__btn--wrap">
+											<button class="projects__btn-name" type="button">
+												WORLDA
+											</button>
+											<button class="projects__btn-search" type="button">
+												<span class="visually-hidden">Search button</span>
+											</button>
+											<button class="projects__btn-select" type="button">
+												<span class="visually-hidden">Select button</span>
+											</button>
+										</div>
+									</li>
+								</ul><!-- ./projects-items -->		
+
+								<div class="projects__archiv">
+									<a class="projects__archiv-link" href="#">Project Archiv</a>
+									<span class="projects__archiv-icon"></span>
+								</div>
+
+							</div><!-- ./projects -->
+
+							<div class="tabs__content-right employee">
+								<ul class="employee__items">
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Mark P.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Marvin S.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Sebastian K.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Mark P.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Philip O.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Mark P.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Benni I.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Benni I.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Benni I.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Benni I.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+
+									<li class="employee__item">
+										<img class="employee__avatar" src="img/user-avatar.png" alt="employee avatar">
+
+										<div class="employee__info--wrap">
+											<div class="employee__info">
+												<span>Benni I.</span> add an Image into Worlda
+											</div>
+											<div class="employee__data">
+												TODAY, <span>10:30</span> PM
+											</div>
+										</div>
+									</li>
+								</ul><!-- ./employee-items -->
+
+								<div class="employee__archiv">
+									<a class="employee__archiv-link" href="#">Project Archiv</a>
+									<span class="employee__archiv-icon"></span>
+								</div>
+							</div><!-- ./employee -->
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__content-messenger">
+							Content2
+						</div>						
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
