@@ -9,7 +9,7 @@ Some of my projects:
 
 [Lucid](https://bullego.github.io/Lucid/ "Lucid project") - Lucid project
 
-[LAB](https://bullego.github.io/temporary-lab/ "Lab project") - Lawyer project (test_desktop)
+[LAB](https://bullego.github.io/temporary-lab/ "Lab project") - Lab test
 
 [Aweb](https://bullego.github.io/Aweb-test/ "Aweb test") - Aweb test
 
