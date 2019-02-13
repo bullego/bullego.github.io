@@ -18,3 +18,5 @@ Some of my projects:
 [Idap](https://bullego.github.io/Idap/ "Idap test") - Idap test
 
 [Pure](https://bullego.github.io/Pure-test/ "Pure test") - Pure test
+
+[Geniusee](https://bullego.github.io/Geniusee/ "Geniusee test") - Geniusee test
