@@ -9,14 +9,8 @@ Some of my projects:
 
 [Lucid](https://bullego.github.io/Lucid/ "Lucid project") - Lucid project
 
-[LAB](https://bullego.github.io/temporary-lab/ "Lab project") - Lab(desktop) test
-
 [Aweb](https://bullego.github.io/Aweb-test/ "Aweb test") - Aweb test
 
-[Firelink](https://bullego.github.io/Firelink-test/ "Firelink test") - Firelink test
-
-[Idap](https://bullego.github.io/Idap/ "Idap test") - Idap test
-
-[Pure](https://bullego.github.io/Pure-test/ "Pure test") - Pure test
+[Playtini (Firelink)](https://bullego.github.io/Firelink-test/ "Firelink test") - Playtini (Firelink) test
 
 [Geniusee](https://bullego.github.io/Geniusee/ "Geniusee test") - Geniusee test
