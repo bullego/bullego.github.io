@@ -136,6 +136,7 @@ a {
 
 .page-header {
   min-height: 40.13rem;
+  height: 40.13rem;
   margin-top: 3.75rem;
   background-color: #f3f4f5;
   background-image: url("../img/main-bg-desktop@1x.jpg");
@@ -152,7 +153,7 @@ a {
 
 .header-logo .color-logo {
   width: 8.75rem;
-  height: auto;
+  height: 2.18rem;
 }
 
 .header-navbar {
@@ -171,14 +172,14 @@ a {
 }
 
 .header-contacts .icon-phone {
-  width: 0.8125rem;
-  height: 0.8125rem;
+  width: 13px;
+  height: 13px;
   margin-top: 0.25rem;
   margin-right: 0.31rem;
   background-image: url("../img/phone-solid.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 0.8125rem 0.8125rem;
-  background-size: 0.8125rem 0.8125rem;
+  -webkit-background-size: 13px 13px;
+  background-size: 13px 13px;
   background-position: center;
 }
 
@@ -317,6 +318,7 @@ a {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   min-height: 12.5rem;
+  height: 12.5rem;
   background-color: #3e85af;
 }
 
@@ -785,6 +787,7 @@ a {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   min-height: 10rem;
+  height: 10rem;
   background-color: #3e85af;
 }
 
@@ -1707,6 +1710,7 @@ a {
 @media screen and (max-width: 991px) {
   .page-header {
     min-height: 35.13rem;
+    height: 35.13rem;
   }
 
   .header-navbar {
@@ -1812,6 +1816,10 @@ a {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+  }
+
+  .features-cards .cards-text {
+    width: 330px;
   }
 
   .cards-price {
@@ -1956,6 +1964,7 @@ a {
 @media screen and (max-width: 767px) {
   .page-header {
     min-height: 30.13rem;
+    height: 30.13rem;
   }
 
   .header-btn {
@@ -2005,6 +2014,10 @@ a {
 
   .features-cards {
     margin-bottom: 2rem;
+  }
+
+  .features-cards .cards-text {
+    width: 240px;
   }
 
   .services {
@@ -2182,6 +2195,7 @@ a {
   }
 
   .text-top {
+    width: 290px;
     font-size: 1.75rem;
   }
 
@@ -2230,6 +2244,7 @@ a {
 
   .page-header {
     min-height: 34rem;
+    height: 34rem;
     margin-top: 1.5rem;
     background-image: url("../img/main-bg-desktop@1x.jpg");
     background-position: 66%;
@@ -2253,6 +2268,8 @@ a {
   }
 
   .statistics {
+    min-height: 22rem;
+    height: 22rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -2288,6 +2305,11 @@ a {
 
   .accordion-title {
     font-size: 0.9375rem;
+  }
+
+  .brands {
+    min-height: 13rem;
+    height: 13rem;
   }
 
   .brands-img {
@@ -2329,6 +2351,10 @@ a {
     font-size: 1.75rem;
   }
 
+  .feedback-slider .sl-item {
+    width: 258px;
+  }
+
   .feedback-slider .slick-prev {
     display: none !important;
   }
@@ -2353,8 +2379,15 @@ a {
     margin-bottom: 0rem;
   }
 
+  .contacts-dscr {
+    width: 290px;
+  }
+
   .footer-security {
+    width: 210px;
+    margin: 0 auto;
     margin-top: 2rem;
+    line-height: 1.2;
     text-align: center;
   }
 
