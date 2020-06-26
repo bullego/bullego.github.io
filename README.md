@@ -1,6 +1,7 @@
 # Buliuk Yevhenii
 Some of my projects:
-[Web Academy] (https://bullego.github.io/hw_1_slider/ "Web Academy Homework (slider)") - Web Academy Homework (slider)
+
+[Web Academy](https://bullego.github.io/hw_1_slider/ "Web Academy Homework (slider)") - Web Academy Homework (slider)
 
 [Alcove-service](https://bullego.github.io/Alcove-service/ "Alcove-service project") - Alcove-service project
 
